@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App_App_1o-Fp {
+  text-align: center;
+}
+
+.App_App-logo_3JCPt {
+  animation: App_App-logo-spin_RvI1J infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App_App-header_3iH8L {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App_App-link_13fTZ {
+  color: #61dafb;
+}
+
+@keyframes App_App-logo-spin_RvI1J {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Login_color_2_nUB{
+    color:red;
+}
+.Login_page_10CUr{
+    color: aquamarine;
+}
