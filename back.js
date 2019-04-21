@@ -10,9 +10,9 @@ const app = new Koa();
 const imagesPath = path.join(path.resolve('./static'), '/')
 app.use(Static(imagesPath))
 
+const html = new SSR()
 app.use(route.get('/*', async ctx => {
     console.log('url', ctx.url)
-    const html = new SSR()
     ctx.body = html.render(ctx.url, ctx)
     console.log('ctx.body', ctx.body)
 }));
