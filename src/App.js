@@ -27,7 +27,7 @@ class App extends Component {
         <div className={styles.App}>
           <header className={styles["App-header"]}>
             <img src={logo} className={styles["App-logo"]} alt="logo" />
-            <p className="123">a:{a.a}
+            <p className="123">
               Edit <code>src/App.js</code> and save to reload.
             </p>
             <Link to={`/Login`}>Login</Link>
@@ -39,7 +39,7 @@ class App extends Component {
 
 function mapStateToProps(state) {      // 将state映射到组件的props中
   return {
-    value: state.count
+    value: state.count || 1
   }
 }
 function mapDispatchToProps(dispatch, ownProps) {// 将dispatch映射到组件的props中

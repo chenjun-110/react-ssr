@@ -25,7 +25,7 @@ class Login extends Component {
 
 function mapStateToProps(state) {      // 将state映射到组件的props中
   return {
-    value: state.count
+    value: state.count || 1
   }
 }
 function mapDispatchToProps(dispatch, ownProps) {// 将dispatch映射到组件的props中

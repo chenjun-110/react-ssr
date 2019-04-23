@@ -6,7 +6,14 @@ import App from './App';
 import Login from './pages/Login';
 import reducers from './store/reducers'
 
-
+const RouteComponent = () => {
+    return (
+        <React.Fragment>
+            <Route exact path="/" component={App} />
+            <Route exact path="/Login" component={Login} />
+        </React.Fragment>
+    )
+}
 export const store = createStore(reducers);
 export const StoreContext = React.createContext({ store });
 export const ClientRouter = () => {
@@ -14,8 +21,7 @@ export const ClientRouter = () => {
     //   <StoreContext.Provider value={{a:1}}>
         <Provider store={store}>
             <BrowserRouter>
-                <Route exact path="/" component={App} />
-                <Route exact path="/Login" component={Login} />
+                <RouteComponent />
             </BrowserRouter>
         </Provider>
     )
@@ -28,8 +34,7 @@ export const ServerRouter = (url, context) => {
                 location={url}
                 context={context}
             >
-                <Route exact path="/" component={App} />
-                <Route exact path="/Login" component={Login} />
+                <RouteComponent />
             </StaticRouter>
         </Provider>
     )
